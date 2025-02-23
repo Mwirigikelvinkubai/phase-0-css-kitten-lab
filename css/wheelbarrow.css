@@ -1,13 +1,17 @@
+/* Set the background for the entire page */
 html {
   background: url(../images/beautiful-day.jpg) no-repeat top center;
+  background-size: cover;
 }
 
+/* Ensure all images are properly positioned and clickable */
 img {
   position: relative;
   z-index: 11;
   cursor: pointer;
 }
 
+/* Wrapper to center content */
 .wrapper {
   position: relative;
   width: 960px;
@@ -15,6 +19,7 @@ img {
   margin: 0 auto;
 }
 
+/* Styling for wheelbarrow elements */
 #wheelbarrow, #wheelbarrow-foreground {
   margin-left: 80px;
   width: 688px;
@@ -24,17 +29,23 @@ img {
 #wheelbarrow { 
   position: relative;
   background: url(../images/wheelbarrow.png) no-repeat;
+  background-size: contain;
   z-index: 0;
   top: 220px;
 }
+
 #wheelbarrow-foreground {
   pointer-events: none;
   position: absolute;
   background: url(../images/wheelbarrow-foreground.png) no-repeat;
+  background-size: contain;
   z-index: 10;
   top: 220px;
 }
 
+/* Ensure basket and ball are correctly displayed */
 #basket, #ball {
-  display: inline;
+  display: inline-block;
 }
+
+/* Fix the ball
